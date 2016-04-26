@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/historypeats/phish_detect#readme",
   "dependencies": {
-    "bootstrap": "^3.3.6",
     "gmail-js": "^0.4.1"
   }
 }

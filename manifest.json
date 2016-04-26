@@ -5,13 +5,11 @@
   "content_scripts": [
     {
       "matches": ["https://mail.google.com/*"],
-      "js": ["content.js"],
-		"css": ["css/namespaced_boostrap.css"]
+      "js": ["content.js"]
     }
   ],
   "web_accessible_resources": [
-    "node_modules/gmail-js/node_modules/jquery/dist/jquery.min.js",
-	"node_modules/bootstrap/dist/js/bootstrap.min.js",
+	"node_modules/gmail-js/node_modules/jquery/dist/jquery.min.js",
     "node_modules/gmail-js/src/gmail.js",
     "main.js"
   ],
