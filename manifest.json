@@ -1,7 +1,7 @@
 {
-  "name": "Gmail.js",
-  "version": "0.1",
-  "description": "Hello World Gmail chrome extension",
+  "name": "Phish Detect",
+  "version": "0.1 alpha",
+  "description": "This extension notifies users if it encounters a potential phishing email.",
   "content_scripts": [
     {
       "matches": ["https://mail.google.com/*"],
