@@ -1,6 +1,6 @@
 {
   "name": "Phish Detect",
-  "version": "0.1 alpha",
+  "version": "0.1",
   "description": "This extension notifies users if it encounters a potential phishing email.",
   "content_scripts": [
     {
