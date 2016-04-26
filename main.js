@@ -17,9 +17,16 @@ var check_failure = function() {
 	
 	console.log('[Phish Detect] Scanning email...');
 
+	// Get the email ID from the url
 	id = window.location.hash.split('/').pop(),
+
+	// Get the "original email", which contains headers
 	raw_email = gmail.get.email_source(id),
-	spoof = /=fail/.test(raw_email);
+
+	// Check for softfail and hardfail
+	spoof = (/=fail/.test(raw_email) || /=softfail/.test(raw_email));
+
+	// If failure, alert user
 	if(spoof) {
 		alert('This email may be a phishing attempt. Please take caution when handling the contents of the email, such as clicking links.');
 		console.log('This could be a phishing email!');
