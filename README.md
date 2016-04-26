@@ -16,7 +16,7 @@ Note: Eventually I will package this up to be distributed in the Chrome Store. H
 ## Usage
 After the extension is installed, it will automatically alert the user via a javascript alert box (for now) as well as output some logging info in the console. The extension activates only when a user opens up an email. The following screenshot depicts the alert message after opening up a spoofed email located in my inbox:
 
-
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
 
 ## ToDo
 - Replace Alert box with a popup modal. I had some difficulties doing this, so if anyone wants to help contribute, by all means, please do!
