@@ -24,7 +24,7 @@ var check_failure = function() {
 	raw_email = gmail.get.email_source(id),
 
 	// Check for softfail and hardfail
-	spoof = (/=fail/.test(raw_email) || /=softfail/.test(raw_email));
+	spoof = (/=fail/.test(raw_email) || /=softfail/.test(raw_email) || /=neutral/.test(raw_email));
 
 	// If failure, alert user
 	if(spoof) {
