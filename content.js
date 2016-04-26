@@ -9,12 +9,6 @@ var p = document.createElement('script');
 p.src = chrome.extension.getURL('node_modules/bootstrap/dist/js/bootstrap.min.js');
 (document.head || document.documentElement).appendChild(p);
 
-// Inject bootstrap
-//var z = document.createElement('link');
-//z.rel = "stylesheet";
-//z.setAttribute('src', chrome.extension.getURL('css/namespaced_boostrap.css'));
-//(document.head || document.documentElement).appendChild(z);
-
 // Inject Gmail.js into DOM
 var g = document.createElement('script');
 g.src = chrome.extension.getURL('node_modules/gmail-js/src/gmail.js');
