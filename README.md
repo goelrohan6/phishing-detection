@@ -9,7 +9,7 @@ Note: This extension relies on the Gmail.js API. This is an unsupported javascri
 2. Install the requirements:
 ```cd phish_detect && npm install```
 3. In chrome, open up the extensions page by going to chrome://extensions
-4. Check "Developer mode" then click on "Load unpacked extension". Click the phish_detect folder. This should install the extension. You can opt to disable Developer mode after it is installed.
+4. Check "Developer mode" then click on "Load unpacked extension". Click the phish_detect folder. This should install the extension. You can disable Developer mode after it is installed.
 5. If you already have Gmail open, you must refresh the page.
 
 Note: Eventually I will package this up to be distributed in the Chrome Store. However, should you want to install from source, you can follow these instructions.
