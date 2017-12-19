@@ -1,17 +1,36 @@
 {
-  "name": "Phish Detect",
-  "version": "0.1",
-  "description": "This extension notifies users if it encounters a potential phishing email.",
-  "content_scripts": [
+    "name": "PWDAP",
+    "version": "0.9",
+    "description": "This extension notifies users if it encounters a potential phishing email.",
+    "background":
     {
-      "matches": ["https://mail.google.com/*"],
-      "js": ["content.js"]
-    }
-  ],
-  "web_accessible_resources": [
-	"node_modules/gmail-js/node_modules/jquery/dist/jquery.min.js",
-    "node_modules/gmail-js/src/gmail.js",
-    "main.js"
-  ],
-  "manifest_version": 2
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+    },
+    {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["detectPhish.js"]
+    }],
+    "icons":
+    {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        "node_modules/gmail-js/node_modules/jquery/dist/jquery.min.js",
+        "jquery.js",
+        "node_modules/gmail-js/src/gmail.js",
+        "detectPhish.js",
+        "main.js"
+    ],
+    "manifest_version": 2
 }

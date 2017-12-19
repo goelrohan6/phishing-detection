@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warning</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+	    body {
+	        background: linear-gradient(to bottom, #e80c26e0 0%, #da3e1bde 100%);
+	        color: white;
+	        text-shadow: 1px 1px #0e0e0e8c;
+	        font-family: 'Open Sans', sans-serif;
+	        display: flex;
+	        justify-content: center;
+	        align-content: center;
+	    }
+
+	    .container {
+	        background: #cc0707de;
+	        padding: 0px 25px 0px 25px;
+	    }
+
+	    #heading {
+	        text-align: center;
+	        font-weight: 500;
+	        font-size: 40px;
+	    }
+
+	    p {
+	        font-size: 20px;
+	    }
+
+	    #warning {
+	        content: "\26A0";
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading"><span id="warning" >&#9888;</span>Warning</h1>
+        <p id="message"></p>
+        <p id="detectors"></p>
+        <p>Screenshot of website</p>
+        <img style="height: 500px" id="screenshot" alt="">
+    </div>
+</body>
+<script src="warningScript.js"></script>
+
+</html>
