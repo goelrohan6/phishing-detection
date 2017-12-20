@@ -17,10 +17,10 @@ chrome.runtime.onMessage.addListener(
                 chrome.tabs.create({
                         "url": request.url +
                             "?positives=" + request.positives +
-                            "&scans="+ de request.scans +
+                            "&scans="+ request.scans +
                             "&tabUrl=" + request.tabUrl +
                             "&screenshotUrl=" + request.screenshotUrl
-                    }
+                    });
                 }
             }
         );
